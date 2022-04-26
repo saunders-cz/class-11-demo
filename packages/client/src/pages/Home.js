@@ -5,6 +5,7 @@ import {
   DialogContent,
   DialogTitle,
   Grid,
+  Link,
   Typography,
 } from "@mui/material";
 import { MealTable } from "../modules/meal/MealTable";
@@ -27,6 +28,7 @@ export const Home = () => {
         </Grid>
         <Grid item>
           <Button onClick={() => setShowAddMeal(true)}>Add Meal</Button>
+          <Link href="/meals">View Meals</Link>
         </Grid>
         <Grid item>
           <MealTable />
