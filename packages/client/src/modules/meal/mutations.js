@@ -21,3 +21,14 @@ export const UPDATE_MEAL = gql`
     }
   }
 `;
+
+export const DELETE_MEAL = gql`
+  mutation DELETE_MEAL($id: ID!) {
+    deleteMeal(id: $id) {
+      ok
+      errors {
+        message
+      }
+    }
+  }
+`

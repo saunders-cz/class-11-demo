@@ -43,5 +43,6 @@ export const typeDefs = gql`
   type Mutation {
     addMeal(input: MealInput!): Result
     updateMeal(id: ID!, input: MealInput!): Result
+    deleteMeal(id: ID!): Result
   }
 `;

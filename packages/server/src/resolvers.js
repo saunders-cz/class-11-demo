@@ -29,5 +29,9 @@ export const resolvers = {
       });
       return { ok: true };
     },
+    deleteMeal: async (parent, { id }) => {
+      await Meal.destroy({ where: { id } });
+      return { ok: true };
+    }
   },
 };
